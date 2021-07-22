@@ -1,0 +1,1 @@
+document.getElementByld("demo").innerHTML= 5+6;

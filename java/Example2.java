@@ -1,20 +1,30 @@
-package com.ust.examples;
-
+package ust.examples;
+//depicting on the nested if condition
 public class Example2 {
-	String name ;
-	double num ;
-	static int count;
-	public static void main(String args[])
-	{
-	int age =10;
-	System.out.println(age);
-	Example1 e =new Example1();
-	e.name="nehnu";
-	e.num =4 ;
-	count=8;
-	System.out.println(e.name);
-	System.out.println(e.num);
-	System.out.println(count);
+float price;
+String item;
+	public static void main(String[] args) {
+		// TODO Auto-generated me
+		Example2 e1= new Example2();
+		Example2 e2= new Example2();
+		
+		
+		e1.price=1.2f;
+		e2.price=25f;
+		e1.item="pen";
+		e2.item="book";
+		
+		if(e1.price > e2.price) {
+			e1.item="scale";
+			
+		}
+		if(e1.price < e2.price) {
+			e1.item="pencil";
+		}
+		else if(e1.price==e2.price) {
+			e1.item="box";
+		}
+		System.out.println(e1.item);
 	}
 
 }

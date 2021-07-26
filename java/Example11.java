@@ -1,28 +1,19 @@
-package com.ust.examples;
+package ust.examples;
 
+import java.io.File;
+
+//basic file operations
 public class Example11 {
 
 	public static void main(String[] args) {
-		char ch='b';
-		switch(ch)
-		{
-		case'd':
-			System.out.println("Case1");
-			break;
-		case'b':
-			System.out.println("Case2");
-			break;
-		case'x':
-			System.out.println("Case3");
-			break;
-		case'y':
-			System.out.println("Case4");
-			break;
-			default:
-				System.out.println("Default");
-			
-		}
-
+		// TODO Auto-generated method stub
+  File f = new File("C:\\Users\\ustjava05\\sample.txt");
+ // if(f.createNewFile()) {
+	  System.out.println("new file is created");
+ // }else {
+	  System.out.println("file already exists");
+  }
+		
 	}
 
-}
+//}

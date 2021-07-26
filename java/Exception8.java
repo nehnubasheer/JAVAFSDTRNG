@@ -1,20 +1,22 @@
-package com.ust.examples;
+package ust.examples;
+
 public class Exception8 {
-	
-public static int returnTest(int number) {
-	try {
-	if (number%2==0)throw new Exception("Excetpion thrown");
-	else 
-	return 5;
-}
-	catch (Exception e) {
-	return 10;
-}
-	finally {
-	return 4;
-}
-}
+
 	public static void main(String[] args) {
-	  System.out.println(returnTest(2));
+		// TODO Auto-generated method stub
+try {
+	int a[]=new int[3];
+	a[3]=8/9;
+	try {
+		a[2]=78;
+	}
+			catch(ArithmeticException e) {
+				System.out.println("Error occures");
+			}
 }
+catch(ArrayIndexOutOfBoundsException e) {
+	System.out.println("No errors");
+}
+	}
+
 }

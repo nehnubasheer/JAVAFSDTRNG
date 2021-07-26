@@ -1,23 +1,17 @@
-package com.ust.examples;
-/*
- *do while
- */
-
+package ust.examples;
+//unary operator
 public class Example7 {
 
 	public static void main(String[] args) {
-		int  x =1, sum =0;
-	/*	
-		{
-			sum = sum+x;
-			x++;
-		}
-		*/
-do {
-	sum = sum+x;
-	x++;		
+		// TODO Auto-generated method stub
+      int i=10;
+      
+		System.out.println(i++)	;
+		i++;
+		System.out.println(i)	;
+		++i;
+		System.out.println(i--)	;
+		--i;
 	}
-while (x<=10);
-System.out.println("summation"+ sum );
-}
+
 }

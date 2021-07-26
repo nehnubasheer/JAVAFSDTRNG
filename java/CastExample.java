@@ -1,32 +1,40 @@
-package com.ust.examples;
-/*
- * Upcasting & Downcasting
- */
+package ust.examples;
+
 public class CastExample {
 
 	public static void main(String[] args) {
-	double num=15.256;
-	System.out.println("num");
-	int n= (int) num;
-	System.out.println(n);
-	int x=78;
-	double y= x;
-	System.out.println(x);
-	System.out.println(y);
-	float f=(float)3.78;
-	byte d= (byte)f;
-	System.out.println(d);
-	long e= 1895;
-	float j= (float)e;
-	System.out.println(j);
-	int c= 4;
-	String dbValue=String.valueOf(c);
-	System.out.println(dbValue);
-	
-	dbValue=String.valueOf(x);
-	System.out.println(dbValue);
-			
-			
+		// TODO Auto-generated method stub
+
+		 double num=15.96;
+		System.out.println(num);
+		int n=(int)num;//downcasting double type to int type
+		System.out.println(n);
+		
+		int p = 90;
+		System.out.println(p);
+	double f=p;//smaller one will get into bigger one
+		System.out.println(f);
+		
+		float k= (float)3.34;
+		
+		byte b =(byte) f;
+		System.out.println(b);
+		
+		long e= 1567;
+		float t= (float)e;
+		System.out.println(t);
+		
+		int c = 23347;
+		String dbValue= String.valueOf(c);
+		System.out.println(dbValue);
+		
+		dbValue = String.valueOf(c);
+				System.out.println(dbValue);	
+				
+		
+				
 	}
+	
+	
 
 }

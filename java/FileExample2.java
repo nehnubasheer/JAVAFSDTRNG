@@ -1,23 +1,30 @@
-package com.ust.examples;
-import java.io.FileInputStream;
+package ust.examples;
+
+import java.io.File;
 
 public class FileExample2 {
 
-public static void main(String[] args) {
-try {
-	FileInputStream input =new FileInputStream("D:File2.txt");
-	System.out.println("Data in the file:");
-	int i= input.read();
-	while(i!=-1) {
-	System.out.print((char)i);
-	i= input.read();
-}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//create a file object
+		File file = new File("D:file2.txt");
+		//create a file
+		try {
+			file.createNewFile();
+		}
+		catch(Exception e) {
+			e.getStackTrace();
+		}
+		//create an object that contains the new name of file
+		File newFile = new File("D:file3.txt");
+		//change the name of file
+		boolean value = file.renameTo(newFile);
+		if(value) {
+			System.out.println("the name of the file is changed .");
+		}
+		else {
+			System.out.println("the name of the file cannot be changed.");
+		}
+	}
 
-    input.close();
-}
-    catch (Exception e) {
-	e.getStackTrace();
-
-}
-}
 }
